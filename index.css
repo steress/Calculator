@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+.framework {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+}
+.container {
+    border: 2px solid black;
+    padding: 7px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 290px;
+    height: auto;
+    background-color: #757575;
+    border-radius: 13px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 270px;
+    margin: 4px;
+}
+.menu .level-1 {
+    gap: 5px;
+}
+.menu .level-2 {
+    gap: 5px;
+}
+.menu .level-3 {
+    gap: 5px;
+}
+.menu .level-4 {
+    gap: 5px;
+}
+.menu .level-5 {
+    gap: 5px;
+}
+
+.display1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:space-between;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 10px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    height: 50px;
+    background-color: whitesmoke;
+    font-size: large;
+}
+.buttons {
+    padding: 15px;
+    font-size: 18px;
+    flex: 20px;
+    border-radius: 8px;
+    background-color: #1E1C20;
+    color: white;
+}
+.buttons2 {
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 18px;
+    flex: 20px;
+    background-color: #306a96;
+}
+.clear {
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    flex:20px;
+    border-radius: 8px;
+    background-color: rgb(167, 98, 98);
+}
+.delete {
+    background-color: rgb(98, 98, 150);
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    flex:20px;
+    border-radius: 8px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
