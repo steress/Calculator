@@ -191,6 +191,7 @@ if (operators.includes(e.key)){
 
 function Subtract() {
     if (operation !== "" && a !== "" && b !== ""){
+        operation = "-"
         operate();
         a = answer;
         b = "";
@@ -211,6 +212,7 @@ function Subtract() {
 
 function Add() {
     if (operation !== "" && a !== "" && b !== ""){
+        operation = "+"
         operate();
         a = answer;
         b = "";
@@ -230,10 +232,14 @@ function Add() {
 
 function Multiply() {
     if (operation !== "" && a !== "" && b !== ""){
-        operate();
-        a = answer;
+        if (b === "0"){
         b = "";
-    }
+        } else {
+            operate();
+            a = answer;
+            b = "";
+        } 
+    };
     operation = "*";
     if (a === "") {
         operation = "";
