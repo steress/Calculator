@@ -10,8 +10,6 @@ const decimal = document.querySelector("#decimal");
 const span = document.querySelector('.new')
 const spanOld = document.querySelector('.old');
 
-
-
 const chars = [
     "1",
     "2",
@@ -102,11 +100,11 @@ function Display(){
 }
 buttons.forEach(buttons => {
     buttons.addEventListener("click", function(e){
-        if (operation === ""){
+        if (operation === "" && a.length <= 10){
             a += e.target.innerText;
             Display();
             console.log(`a is ${a}`);
-        } else {
+        } else if (b.length <= 10) {
             b += e.target.innerText;
             Display();
             console.log(`b is ${b}`);
